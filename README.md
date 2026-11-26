@@ -1,73 +1,28 @@
-# React + TypeScript + Vite
+# Blade Portfolio — ASCII Orbit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The portfolio rebuild has begun. The first milestone migrates the existing Vite/React skeleton to **Next.js App Router** and establishes the locked design direction: dark editorial UI, graphite grid, electric-lime accent, and animated ASCII objects.
 
-Currently, two official plugins are available:
+## First milestone included
+- Next.js App Router foundation and metadata
+- Responsive editorial homepage and navigation
+- ASCII whale hero canvas with floating/orbiting ambient elements and pointer parallax
+- Selected projects section (Kinomi, Nexa Chat, Greedy Casino — content placeholders to refine)
+- Toolkit, About, Contact and footer sections
+- Reduced-motion support
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run locally
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open http://localhost:3000.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Next milestones
+1. Refine ASCII whale shape and rendering engine; add reusable ASCII object primitives.
+2. Add floating 3D ASCII torus, sphere and wireframe cube with shared motion/physics.
+3. Improve projects using real screenshots, verified project descriptions, links and case-study pages.
+4. Add custom mobile navigation, project detail pages, SEO/social metadata, accessibility and performance polish.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Contact and social URLs are placeholders and should be replaced before publishing. No claims or metrics are fabricated in this rebuild.
